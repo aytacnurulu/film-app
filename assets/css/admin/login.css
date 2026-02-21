@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.login-container img {
+  width: 250px;
+  margin: 40px auto 20px auto;
+}
+.login-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--numans-font-family);
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 80px;
+  color: var(--main-text-color);
+  margin-bottom: 40px;
+}
+.auth__form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* FIELD WRAPPER */
+.field{
+  position: relative;
+  width: 400px;        /* inputla eyni */
+}
+
+/* INPUT */
+.field__input{
+  width: 100%;
+  padding: 24px 56px;  /* sağda toggle üçün yer qalır */
+  padding-left: 56px;  /* solda icon üçün yer */
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-family: var(--poppins-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+}
+
+/* ICON SPAN */
+.field__icon{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: block;           /* nöqtə kimi görünməsin */
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+/* EMAIL/PASSWORD ICON BACKGROUNDS */
+.field--email .field__icon{
+  position: absolute;
+  background: url("../../../assets/img/gmail.svg") no-repeat center;
+  background-size: 20px 20px;
+}
+.field--password .field__icon{
+  position: absolute;
+  background: url("../../img/key.svg") no-repeat center;
+  background-size: 20px 20px;
+}
+
+/* TOGGLE BUTTON (istəsən) */
+.field__toggle{
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.auth__actions{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.auth__button{
+  background-color: var(--button-bg-color);
+  color: var(--main-text-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: var(--poppins-font-family);
+  width: 400px;
+}
+
