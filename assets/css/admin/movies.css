@@ -1,0 +1,111 @@
+body {
+  background-color: var(--dashboard-bg-color);
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-left: 300px;
+  margin-bottom: 80px;
+}
+.dashboard-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-title-container h1 {
+  font-family: var(--raleway-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.dashboard-title-container p {
+  font-family: var(--raleway-font-family);
+  font-weight: 500;
+  font-size: 13px;
+  color: #cccccc;
+}
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.admin-profile-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding-right: 120px;
+}
+
+.admin-profile-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.admin-profile-info p {
+  font-family: var(--raleway-font-family);
+  font-weight: 500;
+  font-size: 13px;
+  color: #cccccc;
+}
+.admin-create-button {
+  background-color: var(--button-bg-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 25px;
+  font-family: var(--roboto-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+  padding-left: 280px;
+  padding-right: 80px;
+}
+
+/* Table Styles */
+
+.movies-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.movies-table thead tr {
+  background-color: #1e1e1e;
+}
+
+.movies-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-family: var(--raleway-font-family);
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.movies-table td {
+  padding: 16px 20px;
+  font-family: var(--roboto-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  background-color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.movies-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.movies-table tbody tr:last-child td {
+  border-bottom: none;
+}

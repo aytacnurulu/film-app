@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/global/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/global/global.css" />
+    <link rel="stylesheet" href="../../assets/css/admin/component.css" />
+    <link rel="stylesheet" href="../../assets/css/admin/movies.css" />
+  </head>
+  <body>
+    <aside class="admin-sidebar">
+      <div class="logo-container">
+        <img src="../../assets/img/logo.svg" alt="Admin Logo" />
+        <h1>Filmalisa</h1>
+      </div>
+      <nav class="admin-nav">
+        <div class="nav-item">
+          <img src="../../assets/img/aside/dashboard.svg" alt="dashboard" />
+          <a href="../admin/dashboard.html">Dashboard</a>
+        </div>
+
+        <div class="nav-item">
+          <img src="../../assets/img/aside/movies.svg" alt="movies" />
+          <a href="../admin/movies.html">Movies</a>
+        </div>
+
+        <div class="nav-item">
+          <img src="../../assets/img/aside/categories.svg" alt="categories" />
+          <a href="../admin/categories.html">Categories</a>
+        </div>
+
+        <div class="nav-item">
+          <img src="../../assets/img/aside/users.svg" alt="users" />
+          <a href="../admin/users.html">Users</a>
+        </div>
+        <div class="nav-item">
+          <img src="../../assets/img/aside/comments.svg" alt="comments" />
+          <a href="../admin/comments.html">Comments</a>
+        </div>
+
+        <div class="nav-item">
+          <img src="../../assets/img/aside/contactUs.svg" alt="contact us" />
+          <a href="../admin/contactUs.html">Contact Us</a>
+        </div>
+
+        <div class="nav-item">
+          <img src="../../assets/img/aside/logout.svg" alt="logout" />
+          <a href="../admin/login.html">Logout</a>
+        </div>
+      </nav>
+    </aside>
+    <header class="dashboard-header">
+      <div class="dashboard-title-container">
+        <p>hi Admin</p>
+        <h1 class="dashboard-title">Movies</h1>
+      </div>
+      <div class="admin-profile">
+        <button class="admin-create-button">Create</button>
+        <div class="admin-profile-info">
+          <img src="../../assets/img/profile.svg" alt="profile" />
+          <p>Admin</p>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <table class="movies-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Overview</th>
+            <th>Category</th>
+            <th>IMDB</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>The Dark Knight</td>
+            <td>
+              When the menace known as the Joker wreaks havoc on Gotham...
+            </td>
+            <td>Action</td>
+            <td>9.0</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
