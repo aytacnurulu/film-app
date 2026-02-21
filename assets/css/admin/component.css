@@ -1,0 +1,63 @@
+
+body {
+   background-color: var(--dashboard-bg-color);
+ }
+
+.admin-sidebar {
+  width: 250px;
+  background-color: var(--sidebar-bg-color);
+  color: var(--main-text-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 35px;
+  gap: 68px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-container img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-container h1 {
+  font-family: var(--numans-font-family);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: var(--raleway-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--main-text-color);
+}
+
+.nav-item a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: var(--dashboard-hover-bg-color);
+  color: var(--main-text-color);
+}
+
