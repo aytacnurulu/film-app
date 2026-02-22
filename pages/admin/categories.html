@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../../assets/css/global/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../../assets/css/global/global.css" />
     <link rel="stylesheet" href="../../assets/css/admin/component.css" />
-    <link rel="stylesheet" href="../../assets/css/admin/dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/admin/categories.css" />
   </head>
   <body>
     <aside class="admin-sidebar">
@@ -51,3 +55,55 @@
         </div>
       </nav>
     </aside>
+    <header class="dashboard-header">
+      <div class="dashboard-title-container">
+        <p>hi Admin</p>
+        <h1 class="dashboard-title">Categories</h1>
+      </div>
+      <div class="admin-profile">
+        <button id="categories-create-button" class="categories-create-button" data-bs-toggle="modal" data-bs-target="#categoryModal">Create</button>
+        <div class="admin-profile-info">
+          <img src="../../assets/img/profile.svg" alt="profile" />
+          <p>Admin</p>
+        </div>
+      </div>
+    </header>
+    
+    <main class="main-content">
+      <table class="categories-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Action</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Category Modal -->
+      <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div id="input-container" class="mb-3">
+                <input type="text" class="input form-control" id="category-name" placeholder="Enter category name" />
+                <button type="button" class="btn btn-primary" id="category-submit-btn">Submit</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/admin/category.js"></script>
+    <!-- Bootstrap CSS -->
+  </body>
+</html>
