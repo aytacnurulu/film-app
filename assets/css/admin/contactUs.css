@@ -1,0 +1,223 @@
+/* ===============================
+   PAGE BASE
+================================ */
+body {
+  background-color: var(--dashboard-bg-color);
+}
+
+/* ===============================
+   HEADER
+================================ */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-left: 300px;
+  margin-bottom: 80px;
+}
+
+.dashboard-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.dashboard-title-container h1 {
+  font-family: var(--raleway-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.dashboard-title-container p {
+  font-family: var(--raleway-font-family);
+  font-weight: 500;
+  font-size: 13px;
+  color: #cccccc;
+}
+
+/* ===============================
+   PROFILE
+================================ */
+.admin-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-right: 120px;
+}
+
+.admin-profile-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.admin-profile-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.admin-profile-info p {
+  font-family: var(--raleway-font-family);
+  font-weight: 500;
+  font-size: 13px;
+  color: #cccccc;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* ===============================
+   (Səndə var idi) Create button
+================================ */
+.contact-create-button {
+  background-color: var(--button-bg-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 25px;
+  font-family: var(--roboto-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ===============================
+   MAIN CONTENT
+================================ */
+.main-content {
+  padding-left: 290px;
+  padding-right: 80px;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+
+  /* ✅ Qeyd:
+     Səndə width iki dəfə idi (100% və 50%).
+     Sonuncu 50% qalırdı.
+     Əgər 50% istəyirsənsə saxla, yoxsa 100% et.
+  */
+  width: 50%;
+}
+
+.contact-table thead tr {
+  background-color: #1e1e1e;
+}
+
+.contact-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-family: var(--raleway-font-family);
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-table td {
+  padding: 16px 20px;
+  font-family: var(--roboto-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  background-color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ✅ Hover problemi:
+   səndə td ağ fon verdiyin üçün tr hover çox vaxt görünmür.
+   Ona görə td hover verdik.
+*/
+
+
+.contact-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===============================
+   INPUT (EDIT MODAL)
+================================ */
+.input {
+  background-color: #0000001a;
+  color: #ffffff;
+  border-color: #323b54;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 77px;
+}
+
+.input::placeholder {
+  font-family: var(--poppins-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #323b54;
+}
+
+/* Submit button */
+#comment-submit-btn {
+  background-color: var(--button-bg-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 14px 16px;
+  font-family: var(--roboto-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* ===============================
+   MODALS
+================================ */
+
+/* ✅ Ümumi modal-content verməyi riskli idi.
+   Çünki delete modal (header/body/footer) quruluşunu pozurdu.
+   Ona görə modalları ayrıb verdik.
+*/
+
+/* EDIT modal üçün */
+#commentModal .modal-content {
+  background-color: #171616;
+  padding: 80px 38px 43px 30px;
+  border-radius: 20px;
+}
+
+/* DELETE modal üçün */
+#deleteContactModal .modal-content {
+  background-color: #171616;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Delete modal hissələri eyni fon + border 0 */
+#deleteContactModal .modal-header,
+#deleteContactModal .modal-body,
+#deleteContactModal .modal-footer {
+  background-color: #171616;
+  border: 0;
+}
+
+/* Close icon qara fon üçün ağ olsun */
+#deleteContactModal .btn-close {
+  filter: invert(1);
+}
+
+/* Footer düymələrinin arası (Bootstrap var amma biz də saxladıq) */
+#deleteContactModal .modal-footer {
+  gap: 10px;
+}
