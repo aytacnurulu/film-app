@@ -12,13 +12,13 @@ body {
 .dashboard-title-container {
   display: flex;
   flex-direction: column;
+  gap: 1px;
 }
 
 .dashboard-title-container h1 {
   font-family: var(--raleway-font-family);
   font-weight: 500;
   font-size: 20px;
-  line-height: 42px;
   color: #ffffff;
 }
 .dashboard-title-container p {
@@ -29,15 +29,18 @@ body {
 }
 .admin-profile {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 28px;
+  text-align: center;
+  gap: 30px;
+  padding-right: 120px;
 }
 .admin-profile-info {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
-  padding-right: 120px;
+  gap: 4px;
+  text-align: center;
 }
 
 .admin-profile-info img {
@@ -50,13 +53,15 @@ body {
   font-weight: 500;
   font-size: 13px;
   color: #cccccc;
+  text-align: center;
+  padding-top: 15px;
 }
-.admin-create-button {
+.movies-create-button {
   background-color: var(--button-bg-color);
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  padding: 8px 25px;
+  padding: 4px 25px;
   font-family: var(--roboto-font-family);
   font-weight: 500;
   font-size: 14px;
@@ -108,4 +113,109 @@ body {
 
 .movies-table tbody tr:last-child td {
   border-bottom: none;
+}
+#modal-dialog {
+  background-color: #171616;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 84px;
+  max-width: 900px;
+}
+#modal-content {
+  background-color: #171616;
+  display: flex;
+  border: none;
+}
+#modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input {
+  width: 100%;
+  background-color: #0000001a;
+  border-radius: 4px;
+  border: 1px solid #323b54;
+  color: var(--input-text-color);
+  font-family: var(--poppins-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 14px 20px;
+}
+input::placeholder, textarea::placeholder {
+  color: var(--input-text-color);
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--button-bg-color);
+}
+#modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+#modal-footer button {
+  background-color: var(--button-bg-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 25px;
+  font-family: var(--roboto-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;  
+}
+#adult-check-label{
+  font-family: var(--poppins-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--input-text-color);
+  text-align: center;
+}
+#adult-check-container{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+#modal-img {
+  width: 210px;
+  height: 290px;
+  border-radius: 30px;
+  padding: 15px;
+  margin-right: 15px;
+}
+#category-dropdown {
+  width: 100%;
+  background-color: #0000001a;
+  border-radius: 4px;
+  border: 1px solid #323b54;
+  color: var(--input-text-color);
+  font-family: var(--poppins-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 14px 20px;
+  text-align: left;
+}
+.dropdown-menu {
+  background-color: #171616;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.dropdown-item {
+  background-color: #0000001a;
+  color: var(--input-text-color);
+  font-family: var(--poppins-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
