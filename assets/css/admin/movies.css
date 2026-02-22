@@ -114,9 +114,6 @@ body {
 .movies-table tbody tr:last-child td {
   border-bottom: none;
 }
-.movies-table tbody tr td:last-child {
-  vertical-align: middle;
-}
 #modal-dialog {
   background-color: #171616;
   display: flex;
@@ -221,35 +218,4 @@ input:focus, textarea:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-}
-/* DELETE MODAL */
-#delete-modal-header{
-  background-color: #171616;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-#delete-modal-content{
-  background-color: #171616;
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 20px;
-  color: white;
-}
-#delete-modal-body{
-  background-color: #171616;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-}
-#delete-modal-footer{
-  background-color: #171616;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
 }
