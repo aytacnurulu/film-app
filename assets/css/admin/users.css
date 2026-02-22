@@ -56,18 +56,6 @@ body {
   text-align: center;
   padding-top: 15px;
 }
-.categories-create-button {
-  background-color: var(--button-bg-color);
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  padding: 4px 25px;
-  font-family: var(--roboto-font-family);
-  font-weight: 500;
-  font-size: 14px;
-  cursor: pointer;
-}
-
 /* Main Content */
 .main-content {
   padding-left: 290px;
@@ -76,7 +64,7 @@ body {
 
 /* Table Styles */
 
-.categories-table {
+.users-table {
   width: 100%;
   border-collapse: collapse;
   border-radius: 4px;
@@ -84,11 +72,11 @@ body {
   width: 50%;
 }
 
-.categories-table thead tr {
+.users-table thead tr {
   background-color: #1e1e1e;
 }
 
-.categories-table th {
+.users-table th {
   padding: 16px 20px;
   text-align: left;
   font-family: var(--raleway-font-family);
@@ -98,7 +86,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.categories-table td {
+.users-table td {
   padding: 16px 20px;
   font-family: var(--roboto-font-family);
   font-weight: 400;
@@ -108,11 +96,11 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.categories-table tbody tr:hover {
+.users-table tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-.categories-table tbody tr:last-child td {
+.users-table tbody tr:last-child td {
   border-bottom: none;
 }
 
@@ -138,7 +126,7 @@ body {
   color: #323b54;
 }
 
-#category-submit-btn {
+#user-submit-btn {
   background-color: var(--button-bg-color);
   color: #ffffff;
   border: none;
@@ -150,38 +138,4 @@ body {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-}
-
-/* DELETE MODAL */
-#delete-modal-content {
-  background-color: #171616;
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  padding: 10px;
-}
-#delete-modal-header {
-  background-color: #171616;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-#delete-modal-body {
-  background-color: #171616;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-}
-#delete-modal-footer {
-  background-color: #171616;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
 }
