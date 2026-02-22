@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/css/global/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../../assets/css/global/global.css" />
     <link rel="stylesheet" href="../../assets/css/admin/component.css" />
     <link rel="stylesheet" href="../../assets/css/admin/movies.css" />
@@ -57,12 +61,15 @@
         <h1 class="dashboard-title">Movies</h1>
       </div>
       <div class="admin-profile">
-        <button class="admin-create-button">Create</button>
+        <button class="movies-create-button">Create</button>
+
         <div class="admin-profile-info">
           <img src="../../assets/img/profile.svg" alt="profile" />
           <p>Admin</p>
         </div>
       </div>
+
+      
     </header>
     <main class="main-content">
       <table class="movies-table">
@@ -87,6 +94,52 @@
           </tr>
         </tbody>
       </table>
+
+      <div
+        class="modal fade"
+        id="createMovieModal"
+        tabindex="-1"
+        aria-labelledby="createMovieModalLabel"
+        aria-hidden="true"
+      >
+        <div id="modal-dialog" class="modal-dialog">
+          <div id="modal-content" class="modal-content">
+            <div id="modal-body" class="modal-body">
+              <form id="create-movie-form">
+                <input  id="input-title" type="text" class="input mb-3" placeholder="Title" required />
+                <textarea  id="input-overview" class="input mb-3" name="overview" rows="3" required placeholder="Overview"></textarea>
+                <input  id="input-cover-url" type="text" class="input mb-3" placeholder="Cover url" required />
+                <input  id="input-trailer-url" type="text" class="input mb-3" placeholder="Fragman (youtube embed url)" required />
+                <input  id="input-watch-url" type="text" class="input mb-3" placeholder="Watch url" required />
+                <input  id="input-imdb" type="text" class="input mb-3" placeholder="IMDB" required />
+                <input  id="input-runtime" type="text" class="input mb-3" placeholder="Run time minute" required />
+                <div class="dropdown">
+                <button id="category-dropdown" class="input mb-3" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" required>
+                   Category
+                </button>
+                <ul class="dropdown-menu" >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </div>
+                <div id="modal-footer">
+                  <div id="adult-check-container" class=" mb-3">
+                  <label id="adult-check-label" for="adult-check">Adult</label>
+                  <input type="checkbox" id="adult-check" class="form-check-input" />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <img id="modal-img" src="../../assets/img/modal.svg" alt="Modal Image">
+        </div>
+      </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/admin/movies.js"></script>
+    <!-- Bootstrap CSS -->
+     
   </body>
 </html>
